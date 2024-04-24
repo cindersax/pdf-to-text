@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "dev": "wrangler dev src/main.ts",
+    "deploy": "wrangler deploy --minify src/main.ts"
+  },
+  "dependencies": {
+    "hono": "^4.2.3",
+    "pdfjs-dist": "^4.1.392",
+    "unpdf": "^0.10.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240403.0",
+    "wrangler": "^3.47.0"
+  }
+}

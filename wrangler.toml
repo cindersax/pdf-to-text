@@ -1,0 +1,23 @@
+name = "pdf-to-text"
+compatibility_date = "2023-12-01"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "pdf-to-text-dev"
+
+# [vars]
+# MY_VAR = "my-variable"
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = ""
+
+# [ai]
+# binding = "AI"

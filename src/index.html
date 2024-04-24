@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+    <title>Pdf To Text</title>
+  </head>
+  <body>
+    <h1>Upload your PDF</h1>
+    <form
+      hx-post="/upload"
+      hx-target="#result"
+      hx-swap="outerHTML"
+      hx-encoding="multipart/form-data"
+    >
+      <fieldset>
+        <legend>PDF Upload Form</legend>
+        <div>
+          <label for="pdf">PDF File</label>
+          <input type="file" name="pdf" required />
+        </div>
+
+        <div>
+          <button type="submit">Upload</button>
+        </div>
+      </fieldset>
+    </form>
+    <div id="result"></div>
+  </body>
+</html>
